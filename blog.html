@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="shortcut icon" href="./assests/logo.png" type="image/x-icon">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="style.css"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+
+<body class="bg-[#b5bbf744] min-h-screen pt-4 px-4">
+    <nav class="mb-5 navbar bg-base-100 shadow-sm rounded-md md:w-10/12 mx-auto">
+        <div class="navbar-start gap-2">
+            <img src="assests/logo.png" alt="">
+            <p class="text-2xl text-[#3752FD]">Dev<span class="font-bold ">Board</span></p>
+        </div>
+        <div class="navbar-end flex items-center gap-3">
+
+            <button id="btn-desk" class="btn btn-primary">Back to Desk</button>
+        </div>
+    </nav>
+    <div class="flex items-center justify-center font-bold text-2xl mb-5">
+    <h1>Blogs</h1>
+    </div>
+    
+    <main class="mb-5 bg-base-100 shadow-sm rounded-md md:w-10/12 mx-auto">
+    <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+    <input type="radio" name="my-accordion-2" checked="checked" />
+    <div class="collapse-title font-semibold">Question-1: What are the different ways to select an element in
+    the DOM?</div>
+    <div class="collapse-content text-sm">Using getElementById, Using getElementsByClassName, Using
+    getElementsByTagName,
+    Using querySelector, Using querySelectorAll, Changing the Text Content, Changing the HTML Content
+    </div>
+    </div>
+    <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+    <input type="radio" name="my-accordion-2" />
+    <div class="collapse-title font-semibold">Question-2: What is the difference between innerHTML, innerText,
+    and textContent ?</div>
+    <div class="collapse-content text-sm">textContents is all text contained by an element and all its children
+    that are for formatting purposes only. innerText returns all text contained by an element and all its
+    child elements. innerHtml returns all text, including html tags, that is contained by an element.</div>
+    </div>
+    <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+    <input type="radio" name="my-accordion-2" />
+    <div class="collapse-title font-semibold">Question-3: What is event delegation in the DOM?</div>
+    <div class="collapse-content text-sm">Event delegation is a technique in JavaScript where you attach a
+    single event listener to a parent element instead of adding event listeners to individual child
+    elements.</div>
+    </div>
+    <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+    <input type="radio" name="my-accordion-2" />
+    <div class="collapse-title font-semibold">Question-4: What is event bubbling in the DOM?</div>
+    <div class="collapse-content text-sm">Event bubbling is a mechanism in the DOM where
+    an event triggered on an element "bubbles up" through its ancestors in the DOM tree.
+    </div>
+    </div>
+    <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+    <input type="radio" name="my-accordion-2" />
+    <div class="collapse-title font-semibold">Question-5: How do you create, add, and remove elements using
+    JavaScript?</div>
+    <div class="collapse-content text-sm">To create a new element in the DOM, it can be used
+    document.createElement()., after creating an element, it can be added it to the DOM using methods like
+    appendChild(), To remove an element from the DOM, it can be used removeChild()
+    </div>
+    </div>
+    </main>
+    
+    <script src="./script/blog.js"></script>
+    </body>
+
+    </html>

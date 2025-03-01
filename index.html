@@ -23,32 +23,32 @@
         <div class="navbar-end flex items-center gap-3">
             <div class="flex items-center gap-3 bg-[#b5bbf744] p-3 rounded-md">
                 <img src="assests/checkbox.png" alt="">
-                <p class="font-bold text-[1.25rem]">23</p>
+                <p class="font-bold text-[1.25rem]"><span id="marks" class="font-bold text-[28px]">23</span></p>
             </div>
-            <img class="bg-[#b5bbf744] p-2 rounded-full" src="assests/theme-btn.png" alt="">
+            <img id="bg-change" class="bg-[#b5bbf744] p-2 rounded-full" src="assests/theme-btn.png" alt="">
         </div>
     </nav>
     <main class="grid grid-cols-1 md:grid-cols-4 md:gap-4 gap-y-4 md:w-10/12 mx-auto">
         <section class="bg-white rounded-md p-4 col-span-3">
             <!-- upper box -->
-            <div class="grid grid-cols-4 mb-5 gap-4">
+            <div class="grid grid-cols-1 lg:grid-cols-4 mb-5 gap-4">
                 <div class="flex items-center gap-3 justify-center bg-[#b5bbf744] p-3 rounded-md">
                     <div>
                         <img src="./assests/checkbox.png" alt="">
                     </div>
                     <div>
                         <p>Task Assigned </p>
-                        <p>05</p>
+                        <p><span id="task-finish" class="font-bold text-[28px]">06</span></p>
                     </div>
                 </div>
-                <div
+                <div id="Discover"
                     class="col-span-2 flex items-center justify-center gap-3 bg-gradient-to-br from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] p-3 rounded-md">
                     <img src="./assests/board.png" alt="">
-                    <p class="font-bold text-white text-[1.25rem]">Discover Something New Today!</p>
+                    <p class="font-bold text-white text-[1.25rem] cursor-pointer">Discover Something New Today!</p>
                 </div>
                 <div class="bg-[#b5bbf744] p-3 rounded-md flex items-center justify-center gap-3">
                     <img src="./assests/calender.png" alt="">
-                    <p class="font-bold">Wed ,
+                    <p id="display-date" class="font-bold">Wed ,
                         Jul 28 2025 </p>
                 </div>
             </div>
@@ -59,15 +59,15 @@
                 </div>
             </div>
             <!-- box-6th area -->
-            <div class="grid md:grid-cols-3 gap-4 grid-cols-2">
+            <div class="grid md:grid-cols-2 gap-4 grid-cols-1 lg:grid-cols-3">
                 <!-- box-1 -->
                 <div class="card bg-base-100 shadow-sm bg-[#b5bbf744]">
                     <div class="card-body">
                         <div>
                             <button class="text-left bg-white p-2 rounded-md font-semibold mb-3">ShopEase</button>
                         </div>
-                        <h2 class="card-title text-2xl">Fix Mobile Button Issue</h2>
-                        <p class="mb-3">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick
+                        <h2 id="title-1" class=" text-2xl">Fix Mobile Button Issue</h2>
+                        <p class="mb-3 bg-white p-2 rounded-md">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick
                             works
                             properly
                             and ensure onClick works properly</p>
@@ -78,7 +78,7 @@
                                 <p class="font-bold">21 March 2025</p>
                             </div>
                             <div class="card-actions justify-end">
-                                <button class="btn btn-primary">Completed</button>
+                                <button class="update-btn px-3 py-2 rounded-md hover:bg-blue-600 bg-blue-500 text-white">Completed</button>
                             </div>
                         </div>
                     </div>
@@ -87,10 +87,10 @@
                 <div class="card bg-base-100 shadow-sm bg-[#b5bbf744]">
                     <div class="card-body">
                         <div>
-                            <button class="text-left bg-white p-2 rounded-md font-semibold mb-3">ShopEase</button>
+                            <button class="text-left bg-white p-2 rounded-md font-semibold mb-3">CloudSync</button>
                         </div>
-                        <h2 class="card-title text-2xl">Fix Mobile Button Issue</h2>
-                        <p class="mb-3">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick
+                        <h2 id="title-2" class="text-2xl">Add Dark Mode</h2>
+                        <p class="mb-3 bg-white p-2 rounded-md">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick
                             works
                             properly
                             and ensure onClick works properly</p>
@@ -101,7 +101,7 @@
                                 <p class="font-bold">21 March 2025</p>
                             </div>
                             <div class="card-actions justify-end">
-                                <button class="btn btn-primary">Completed</button>
+                                <button class="update-btn px-3 py-2 rounded-md hover:bg-blue-600 bg-blue-500 text-white">Completed</button>
                             </div>
                         </div>
                     </div>
@@ -110,10 +110,10 @@
                 <div class="card bg-base-100 shadow-sm bg-[#b5bbf744]">
                     <div class="card-body">
                         <div>
-                            <button class="text-left bg-white p-2 rounded-md font-semibold mb-3">ShopEase</button>
+                            <button class="text-left bg-white p-2 rounded-md font-semibold mb-3">SwiftPay</button>
                         </div>
-                        <h2 class="card-title text-2xl">Fix Mobile Button Issue</h2>
-                        <p class="mb-3">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick
+                        <h2 id="title-3" class="text-2xl">Optimize  Home page </h2>
+                        <p class="mb-3 bg-white p-2 rounded-md">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick
                             works
                             properly
                             and ensure onClick works properly</p>
@@ -124,7 +124,7 @@
                                 <p class="font-bold">21 March 2025</p>
                             </div>
                             <div class="card-actions justify-end">
-                                <button class="btn btn-primary">Completed</button>
+                                <button class="update-btn px-3 py-2 rounded-md hover:bg-blue-600 bg-blue-500 text-white">Completed</button>
                             </div>
                         </div>
                     </div>
@@ -133,10 +133,10 @@
                 <div class="card bg-base-100 shadow-sm bg-[#b5bbf744]">
                     <div class="card-body">
                         <div>
-                            <button class="text-left bg-white p-2 rounded-md font-semibold mb-3">ShopEase</button>
+                            <button class="text-left bg-white p-2 rounded-md font-semibold mb-3">Meta</button>
                         </div>
-                        <h2 class="card-title text-2xl">Fix Mobile Button Issue</h2>
-                        <p class="mb-3">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick
+                        <h2 id="title-4" class="text-2xl">Add new emoji 🤲</h2>
+                        <p class="mb-3 bg-white p-2 rounded-md">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick
                             works
                             properly
                             and ensure onClick works properly</p>
@@ -147,7 +147,7 @@
                                 <p class="font-bold">21 March 2025</p>
                             </div>
                             <div class="card-actions justify-end">
-                                <button class="btn btn-primary">Completed</button>
+                                <button class="update-btn px-3 py-2 rounded-md hover:bg-blue-600 bg-blue-500 text-white">Completed</button>
                             </div>
                         </div>
                     </div>
@@ -156,10 +156,10 @@
                 <div class="card bg-base-100 shadow-sm bg-[#b5bbf744]">
                     <div class="card-body">
                         <div>
-                            <button class="text-left bg-white p-2 rounded-md font-semibold mb-3">ShopEase</button>
+                            <button class="text-left bg-white p-2 rounded-md font-semibold mb-3">Google LLC</button>
                         </div>
-                        <h2 class="card-title text-2xl">Fix Mobile Button Issue</h2>
-                        <p class="mb-3">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick
+                        <h2 id="title-5" class="text-2xl">Integrate OpenAI API </h2>
+                        <p class="mb-3 bg-white p-2 rounded-md">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick
                             works
                             properly
                             and ensure onClick works properly</p>
@@ -170,7 +170,7 @@
                                 <p class="font-bold">21 March 2025</p>
                             </div>
                             <div class="card-actions justify-end">
-                                <button class="btn btn-primary">Completed</button>
+                                <button class="update-btn px-3 py-2 rounded-md hover:bg-blue-600 bg-blue-500 text-white">Completed</button>
                             </div>
                         </div>
                     </div>
@@ -179,10 +179,10 @@
                 <div class="card bg-base-100 shadow-sm bg-[#b5bbf744]">
                     <div class="card-body">
                         <div>
-                            <button class="text-left bg-white p-2 rounded-md font-semibold mb-3">ShopEase</button>
+                            <button class="text-left bg-white p-2 rounded-md font-semibold mb-3">Glassdoar</button>
                         </div>
-                        <h2 class="card-title text-2xl">Fix Mobile Button Issue</h2>
-                        <p class="mb-3">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick
+                        <h2 id="title-6" class="text-2xl">Improve Job searching </h2>
+                        <p class="mb-3 bg-white p-2 rounded-md">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick
                             works
                             properly
                             and ensure onClick works properly</p>
@@ -193,7 +193,7 @@
                                 <p class="font-bold">21 March 2025</p>
                             </div>
                             <div class="card-actions justify-end">
-                                <button class="btn btn-primary">Completed</button>
+                                <button class="update-btn px-3 py-2 rounded-md hover:bg-blue-600 bg-blue-500 text-white">Completed</button>
                             </div>
                         </div>
                     </div>
@@ -204,10 +204,10 @@
             <div class="flex items-center justify-center flex-col">
                 <div class="flex items-center justify-center gap-3">
                     <img src="./assests/activity.png" alt="">
-                    <p>Activity Log</p>
+                    <p class="font-bold text-[24px]">Activity Log</p>
                 </div>
                 <div>
-                    <button class="btn btn-primary mt-3 text-center">Clear History</button>
+                    <button id="clear-history" class="px-3 py-2 rounded-md hover:bg-blue-600 bg-blue-500 text-white mt-3 text-center">Clear History</button>
                 </div>
 
             </div>
@@ -217,11 +217,20 @@
 
                 </div>
             </div>
+            <div id="activity-log-container">
+                  
+            </div>
+            
 
         </section>
 
     </main>
-
+    <script src="./script/history.js"></script>
+    <script src="./script/script.js"></script>
+    <script src="./script/updatedBtn.js"></script>
+    <script src="./script/alert.js"></script>
+    <script src="./script/colorChangeBtn.js"></script>
+    
 </body>
 
 </html>
